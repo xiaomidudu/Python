@@ -1,0 +1,12 @@
+def printMax(a,b): #a、b是形参
+  if a > b:
+    print(a, 'is maximum')
+  elif a == b:
+    print(a, 'is equal to',b)
+  else:
+    print(b, 'is maximum')
+printMax(3,4) #方式一，（3、4是实参）
+
+x=5 #方式二
+y=7
+printMax(x,y)  #（x、y是实参）

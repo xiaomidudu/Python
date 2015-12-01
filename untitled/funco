@@ -1,0 +1,11 @@
+def func_outer():
+  x=2
+  print('x is',x)
+
+  def func_inner():
+    nonlocal x  #nonlocal关键字用来在函数或其他作用域中使用外层(非全局)变量
+    x=5
+  func_inner()
+  print('Changed local x to',x)
+
+func_outer()  #执行该函数

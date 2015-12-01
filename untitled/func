@@ -1,0 +1,8 @@
+x = 50  #全局变量x
+def func(x):
+  print('x is', x)
+  x=2  #x是函数的局部变量
+  print('Changed local x to', x)
+
+func(x)
+print('x is still', x)
